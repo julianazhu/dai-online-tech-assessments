@@ -18,19 +18,21 @@ def events() -> dict:
             "customer_id": "a",
             "call_id": 1,
             "sentiments": ["happy", "sad", "bored"],
-            "timestamp": "2024-10-01T10:00:00Z",
+        },
+        {
+            "customer_id": "a",
+            "call_id": 2,
+            "sentiments": ["happy", "bored", "sleepy"],
+        },
+        {
+            "customer_id": "a",
+            "call_id": 3,
+            "sentiments": ["doubtful", "happy"],
         },
         {
             "customer_id": "b",
-            "call_id": 2,
-            "sentiments": ["happy", "bored", "sleepy"],
-            "timestamp": "2024-10-01T11:00:00Z",
-        },
-        {
-            "customer_id": "c",
-            "call_id": 3,
-            "sentiments": ["doubtful", "happy"],
-            "timestamp": "2024-10-01T12:00:00Z",
+            "call_id": 4,
+            "sentiments": ["bored"],
         },
     ]
 
@@ -46,4 +48,4 @@ class TestSentiment:
         Test to see if the function returns the correct top_n sentiments
         when given a valid input
         """
-        assert top_sentiments(events, top_n=2, n=3) == ["happy", "bored"]
+        assert top_sentiments(events, top_n=2, customer_id="a") == ["happy", "bored"]
