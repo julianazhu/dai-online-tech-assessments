@@ -13,8 +13,8 @@ This challenge aims to highlight a few different areas of your technical skillse
 As a part of the Agent Experiences (AXT) team, you've been tasked to implement a function that summarises
 sentiments received in a series of call events.
 
-- We've stubbed out a function within the `sentiment.py` file.
-- We've written some basic unit tests in the `test_sentiment.py` file.
+- We've stubbed out a function within the `src/sentiment.ts` file.
+- We've written some basic unit tests in the `src/sentiment.spec.ts` file.
 
 You can use Google etc. to look up any Python / library API documentation.
 

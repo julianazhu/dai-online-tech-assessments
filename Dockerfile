@@ -1,6 +1,6 @@
-FROM python:3.10
+FROM node:23-alpine
 RUN mkdir sentiment
-WORKDIR sentiment
+WORKDIR /sentiment
 COPY . .
-RUN pip install -r requirements.txt
-ENTRYPOINT ["python","-m","pytest","."]
+RUN npm install
+ENTRYPOINT ["npm","run","test"]
