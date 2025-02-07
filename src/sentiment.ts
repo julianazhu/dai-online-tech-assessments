@@ -1,7 +1,7 @@
 export interface Event {
-  customerId: string;
-  callId: number;
-  sentiments: string[];
+  customerId: string
+  callId: number
+  sentiments: string[]
 }
 
 /**
