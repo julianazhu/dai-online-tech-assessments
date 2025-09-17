@@ -9,7 +9,7 @@ from sentiment import top_sentiments
 
 
 @pytest.fixture(scope="class")
-def events() -> dict:
+def events() -> List[dict]:
     """
     Fixture to return a series of events
     """
@@ -43,7 +43,7 @@ class TestSentiment:
     Tests for the sentiment summarizing function
     """
 
-    def test_top_sentiments_with_valid_input(self, events: List[str]):
+    def test_top_sentiments_with_valid_input(self, events: List[dict]):
         """
         Test to see if the function returns the correct top_n sentiments
         when given a valid input
