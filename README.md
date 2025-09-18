@@ -19,4 +19,15 @@ sentiments received in a series of call events.
 You can use Google etc. to look up any Python / library API documentation.
 
 **NOTE:** We do not expect you to implement an optimal solution, nor do we
-expect you to come up with a complete solution within the time frame. 
+expect you to come up with a complete solution within the time frame.
+
+```ts
+    // a list of events
+    [
+        {
+            customerId: 'a',
+            callId: 1,
+            sentiments: ['happy', 'sad', 'bored']
+        }
+    ]
+```
