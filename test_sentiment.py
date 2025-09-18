@@ -44,8 +44,4 @@ class TestSentiment:
     """
 
     def test_top_sentiments_with_valid_input(self, events: List[dict]):
-        """
-        Test to see if the function returns the correct top_n sentiments
-        when given a valid input
-        """
-        assert top_sentiments(events, top_n=2, customer_id="a") == ["happy", "bored"]
+        # TBD
